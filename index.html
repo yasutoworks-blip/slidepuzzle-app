@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ずらしけし｜全消しをねらう5×5パズル</title>
+    <meta name="description" content="行と列をずらして同じ色を4つ以上そろえて消す5×5のパズルゲーム。盤面を全部消し切るのを目指します。Android向け。">
+    <meta property="og:title" content="ずらしけし｜全消しをねらう5×5パズル">
+    <meta property="og:description" content="行と列をずらして同じ色を4つ以上そろえて消す5×5のパズル。">
+    <meta property="og:type" content="website">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; color: #4A2E0B; line-height: 1.7;
+               background: linear-gradient(180deg, #FF9E6B 0%, #FFC26B 32%, #FFE29A 100%); min-height: 100vh; }
+        .wrap { max-width: 640px; margin: 0 auto; padding: 56px 24px 40px; }
+        .icon { width: 104px; height: 104px; border-radius: 24px; display: block; }
+        h1 { font-size: 27px; margin: 22px 0 10px; }
+        .lead { font-size: 16px; }
+        .card { background: rgba(255,255,255,0.86); border-radius: 16px; padding: 22px 24px; margin-top: 28px; }
+        .card h2 { font-size: 17px; margin-bottom: 10px; color: #7A4200; }
+        ol, ul { margin-left: 20px; }
+        li { font-size: 15px; margin-bottom: 6px; }
+        footer { margin-top: 32px; font-size: 14px; }
+        a { color: #0F766E; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <img class="icon" src="./icon.png" alt="ずらしけし">
+    <h1>ずらしけし</h1>
+    <p class="lead">行と列を1本ずつずらして、同じ色を4つ以上そろえて消す5×5のパズルです。盤の駒を全部消し切るのを目指します。Android向け。</p>
+
+    <div class="card">
+        <h2>あそびかた</h2>
+        <ol>
+            <li>行または列をスワイプして1マスずらす</li>
+            <li>同じ色が縦か横に4つ以上つながると消える</li>
+            <li>消えたぶんは、その列の在庫から補充される</li>
+            <li>もう消せる形が作れなくなったら終わり</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>速さではなく、数を数えるゲームです</h2>
+        <p>色ごとの残りの数をいつも画面に出しています。ある色の残りが3個以下になると、その色はもう4つそろえられません。消せる形ができても、あえて消さずに待つ。この判断がこのゲームの中身です。</p>
+    </div>
+
+    <div class="card">
+        <h2>そのほか</h2>
+        <ul>
+            <li>オフラインで遊べます（広告の読み込みのときだけ通信します）</li>
+            <li>アプリ内購入はありません</li>
+            <li>成績や設定は端末の中だけに保存されます</li>
+        </ul>
+    </div>
+
+    <footer>
+        <a href="./privacy-policy.html">プライバシーポリシー</a>　|
+        <a href="mailto:harukitoblog1@gmail.com">お問い合わせ</a>
+    </footer>
+</div>
+</body>
+</html>
