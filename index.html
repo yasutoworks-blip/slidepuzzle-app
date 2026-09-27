@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ずらしけし｜全消しをねらう5×5パズル</title>
-    <meta name="description" content="行と列をずらして同じ色を4つ以上そろえて消す5×5のパズルゲーム。盤面を全部消し切るのを目指します。Android向け。">
-    <meta property="og:title" content="ずらしけし｜全消しをねらう5×5パズル">
-    <meta property="og:description" content="行と列をずらして同じ色を4つ以上そろえて消す5×5のパズル。">
+    <title>ずらしけし｜消す前に数える全消しパズル</title>
+    <meta name="description" content="行と列をずらして同じ色を4つ以上そろえて消す5×5のパズルゲーム。残りの数を数えながら、盤面を全部消し切るのを目指します。1ゲーム3分ほど。Android向け・無料。">
+    <meta property="og:title" content="ずらしけし｜消す前に数える全消しパズル">
+    <meta property="og:description" content="行と列をずらして同じ色を4つ以上そろえて消す5×5のパズル。残りの数を数えながら、全部消し切るのを目指します。">
     <meta property="og:type" content="website">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -16,11 +16,16 @@
         .icon { width: 104px; height: 104px; border-radius: 24px; display: block; }
         h1 { font-size: 27px; margin: 22px 0 10px; }
         .lead { font-size: 16px; }
+        .cta { margin-top: 22px; }
+        .btn { display: inline-block; background: #0F766E; color: #fff; text-decoration: none; padding: 14px 32px;
+               border-radius: 8px; font-size: 16px; font-weight: 700; }
+        .note { font-size: 13px; margin-top: 8px; }
         .card { background: rgba(255,255,255,0.86); border-radius: 16px; padding: 22px 24px; margin-top: 28px; }
         .card h2 { font-size: 17px; margin-bottom: 10px; color: #7A4200; }
         ol, ul { margin-left: 20px; }
         li { font-size: 15px; margin-bottom: 6px; }
         footer { margin-top: 32px; font-size: 14px; }
+        footer .cta { margin: 0 0 20px; }
         a { color: #0F766E; }
     </style>
 </head>
@@ -28,7 +33,11 @@
 <div class="wrap">
     <img class="icon" src="./icon.png" alt="ずらしけし">
     <h1>ずらしけし</h1>
-    <p class="lead">行と列を1本ずつずらして、同じ色を4つ以上そろえて消す5×5のパズルです。盤の駒を全部消し切るのを目指します。Android向け。</p>
+    <p class="lead">行と列を1本ずつずらして、同じ色を4つ以上そろえて消す5×5のパズルです。盤の駒を全部消し切るのを目指します。1ゲーム3分ほど。Android向け。</p>
+    <div class="cta">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.yasutoworks.slidepuzzle">Google Play で入手</a>
+        <p class="note">無料／アプリ内購入なし</p>
+    </div>
 
     <div class="card">
         <h2>あそびかた</h2>
@@ -46,15 +55,29 @@
     </div>
 
     <div class="card">
+        <h2>3つの難易度</h2>
+        <ul>
+            <li>やさしい：駒85個／制限時間5分</li>
+            <li>ふつう：駒125個／制限時間3分</li>
+            <li>むずかしい：駒165個／制限時間2分30秒</li>
+        </ul>
+        <p>虹色ピースをオンにすると、1ゲームに1回だけ好きな色に変えられる駒を持って始められます。</p>
+    </div>
+
+    <div class="card">
         <h2>そのほか</h2>
         <ul>
             <li>オフラインで遊べます（広告の読み込みのときだけ通信します）</li>
+            <li>ステージが終わったあとに全画面の広告が出ることがあります</li>
             <li>アプリ内購入はありません</li>
             <li>成績や設定は端末の中だけに保存されます</li>
         </ul>
     </div>
 
     <footer>
+        <div class="cta">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.yasutoworks.slidepuzzle">Google Play で入手</a>
+        </div>
         <a href="./privacy-policy.html">プライバシーポリシー</a>　|
         <a href="mailto:harukitoblog1@gmail.com">お問い合わせ</a>
     </footer>
